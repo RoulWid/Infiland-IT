@@ -1,0 +1,267 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --bg-color: #F1F1F1;
+    --bg-color-light: #fff;
+    --text-color: #000;
+    --main-text-color: #070707;
+
+    --standart-text-size: 14px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    font-size: var(--standart-text-size);
+}
+
+
+
+
+
+/* Header nav */
+.header{
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    padding-top: 46px;
+}
+
+.logo{
+    padding: 0 12px 3px 0;
+
+    position: relative;
+
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.logo::after{
+    content: "";
+    display: block;
+
+    background-color: #FDA300;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+
+.nav-btn{
+    display: none;
+}
+
+.nav-link{
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.nav-link.active{
+    color: #606060;
+}
+
+
+
+
+/* Head text and img */
+.header-row {
+    background-color: var(--bg-color);
+    margin-top: 76px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+.header__text {
+    max-width: 500px;
+
+    margin-top: 124px;
+}
+.header-title {
+    font-weight: 600;
+    font-size: 44px;
+
+    margin-bottom: 20px;
+}
+
+.header-paragraph {
+    line-height: 200%;
+}
+.header__img {
+    /* max-width: 500px;
+    max-height: auto; */
+}
+.header-img {
+}
+
+
+
+
+/* Services in head */
+.services{
+    background-color: var(--bg-color-light);
+}
+.section__content {
+    background-color: var(--bg-color-light);
+
+    padding: 90px 0;
+}
+.list-skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 60px;
+}
+.list-skills__element {
+    text-align: start;
+    flex: 1 1 0;
+    min-width: 300px;
+    /* max-width: 370px; */
+}
+.icons {
+    margin-bottom: 30px;
+}
+.skills-title {
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+.skills__text {
+    line-height: 200%;
+}
+
+
+
+
+
+/* Main card */
+.card {
+    background-color: var(--bg-color);
+    color: var(--main-text-color);
+
+    padding: 90px 0;
+}
+
+.main-title {
+    font-weight: 600;
+    font-size: 34px;
+
+    margin-bottom: 70px;
+
+    text-align: center;
+}
+
+.main-list {
+}
+
+.main-list__element {
+    text-align: center;
+}
+
+.main-list__element + .main-list__element{
+    margin-top: 90px;
+}
+
+.main-img {
+    margin-bottom: 40px;
+}
+.description {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Footer */
+.footer {
+    background-color: var(--bg-color-light);
+    color: var(--main-text-color);
+
+    padding: 90px 0;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 34px;
+    font-weight: 600;
+
+    margin-bottom: 60px;
+}
+
+.footer-description {
+    font-size: 18px;
+
+    margin-bottom: 40px;
+}
+
+.btn {
+    background-color: var(--main-text-color);
+    font-size: 18px;
+    color: #fff;
+    border-radius: 30px;
+    padding: 7px 22px;
+
+    display: inline-block;
+
+    margin-bottom: 80px;
+
+    transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+
+.btn:hover, .btn:focus{
+    background-color:rgb(68, 68, 68)
+}
+
+.btn:active{
+    position: relative;
+    top: 1px;
+
+    background-color: #000;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+
+    margin-bottom: 40px;
+}
+
+.social__elements {
+
+}
+
+.copyright {
+    color: #828282;
+}
